@@ -60,6 +60,8 @@ if __name__ == '__main__':
     ####################### system send message #############################
     request = {
         'seq': str(datetime.datetime.now()),
+        'dev': 'COF',
+        'num': '01',
         'cmd': 'stop',
         'par1': '',
         'par2': '',

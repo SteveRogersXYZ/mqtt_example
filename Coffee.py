@@ -72,12 +72,12 @@ def Coffee_handler():
                 #4)make response message from result of your function
                 ####################### handler send message #######################
                 response = {
-                    'seq': request["seq"], #same sqe with the request msg
+                    'seq': request["seq"], #(same sqe with the request msg)
                     'type':'response',     #event/response
-                    'cmd': request["cmd"], #same cmd with the request msg
-                    'dev': 'COF',          #device code
-                    'num': '01',           #device number
-                    'code':'',            #error code
+                    'cmd': request["cmd"], #command (same cmd with the request msg)
+                    'dev': request["dev"], #device code
+                    'num': request["num"], #device number
+                    'code':'',             #error code
                     'msg':'',              #error message
                     'value':'',            #if the cmd need 'return value'
                     'status':'STOPPED'     #status
