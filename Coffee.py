@@ -77,7 +77,7 @@ def Coffee_handler():
                     'cmd': request["cmd"], #same cmd with the request msg
                     'dev': 'COF',          #device code
                     'num': '01',           #device number
-                    'error':'',            #error code
+                    'code':'',            #error code
                     'msg':'',              #error message
                     'value':'',            #if the cmd need 'return value'
                     'status':'STOPPED'     #status
